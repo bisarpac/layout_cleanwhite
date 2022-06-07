@@ -1,0 +1,152 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>CSS. Верстка.</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body class="page">
+	<header class="header">
+		<div class="container">
+			<nav class="navigation">
+				<div class="navigation__row">
+					<div class="navigation__logo">LØGØ</div>
+					<ul class="navigation__menu">
+						<li class="navigation__item"><a class="navigation__link" href="#">work</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">team</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="image">
+			<div class="image__background">
+				<div class="image__content">
+					<h1 class="image__title">let us make<br>your lives easier</h1>
+					<p class="image__description">We specialize in crafting awesome ideas for web, mobile and beyond.</p>
+				</div>
+				<div class="image__button">
+					<div class="image__button-outer">
+						<div class="image__button-inner">
+							<div class="image__button-arrow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<section class="work">
+			<div class="title">
+				<h2 class="title__text">featured work</h2>
+				<div class="title__underline"></div>
+			</div>
+			<div class="description">
+				<p class="description__text">Here you can find some of our latest works, to see the details of these works
+					just click the thumbnails below.</p>
+			</div>
+			<div class="work__examples">
+				<div class="work__example"><img class="work__image" src="img/fw11.jpg" alt=""></div>
+				<div class="work__example work__example--centered"><img class="work__image" src="img/fw12.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw13.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw21.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw22.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw23.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw31.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw32.jpg" alt=""></div>
+				<div class="work__example"><img class="work__image" src="img/fw33.jpg" alt=""></div>
+			</div>
+		</section>
+	</div>
+	<section class="team">
+		<div class="container">
+			<div class="title">
+				<h2 class="title__text">team</h2>
+				<div class="title__underline"></div>
+			</div>
+			<div class="description">
+				<p class="description__text">We are a hard working group, who's aim is to listen to your problems<br>and to come
+					up with the best solution possible. We follow the latest trends on the web to create custom talierd niche
+					websites.</p>
+			</div>
+			<div class="team-members">
+				<div class="team__member">
+					<div class="team__member-outer">
+						<div class="team__member-ellipse">
+							<img class="team__member-photo" src="img/t1.png" alt="">
+						</div>
+					</div>
+					<div class="team__member-name">naME sURNAME</div>
+					<div class="team__member-position">Lead Developer</div>
+					<div class="team__member-links">
+						<img class="team__member-link" src="img/icons/twitter.png" alt="">
+						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					</div>
+				</div>
+				<div class="team__member">
+					<div class="team__member-outer">
+						<div class="team__member-ellipse">
+							<img class="team__member-photo" src="img/t2.png" alt="">
+						</div>
+					</div>
+					<div class="team__member-name">naME sURNAME</div>
+					<div class="team__member-position">Lead Designer</div>
+					<div class="team__member-links">
+						<img class="team__member-link" src="img/icons/twitter.png" alt="">
+						<img class="team__member-link" src="img/icons/dribbbel.png" alt="">
+						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					</div>
+				</div>
+				<div class="team__member">
+					<div class="team__member-outer">
+						<div class="team__member-ellipse">
+							<img class="team__member-photo" src="img/t3.png" alt="">
+						</div>
+					</div>
+					<div class="team__member-name">naME sURNAME</div>
+					<div class="team__member-position">Marketing Director</div>
+					<div class="team__member-links">
+						<img class="team__member-link" src="img/icons/skype.png" alt="">
+						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					</div>
+				</div>
+				<div class="team__member">
+					<div class="team__member-outer">
+						<div class="team__member-ellipse">
+							<img class="team__member-photo" src="img/t4.png" alt="">
+						</div>
+					</div>
+					<div class="team__member-name">naME sURNAME</div>
+					<div class="team__member-position">Business Director</div>
+					<div class="team__member-links">
+						<img class="team__member-link" src="img/icons/skype.png" alt="">
+						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="contact__container">
+			<div class="contact__location"></div>
+			<div class="contact__form">
+				<div class="contact__text-form"></div>
+				<div class="contact__adress-and-button">
+					<div class="contact__adress"></div>
+					<div class="contact__send-button"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

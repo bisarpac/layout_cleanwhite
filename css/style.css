@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+/*Шрифты*/
+@font-face {
+  font-family: "Gotham - Book";
+  src: url("../fonts/Gotham-Book.eot");
+  src: local("☺"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/Gotham-Medium.eot");
+  src: local("☺"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/Gotham-Bold.eot");
+  src: local("☺"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/Mark Simonson - Proxima Nova Regular.eot');
+	src: local('☺'), url('../fonts/Mark Simonson - Proxima Nova Regular.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Regular.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+.page {
+}
+
+.header {
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.navigation {
+  height: 100px;
+}
+
+.navigation__row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo {
+  color: #4c4c4c;
+  font-family: "Gotham - Book";
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navigation__menu {
+  font-family: Gotham;
+  color: #a7a7a7;
+  width: 332px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.navigation__item {
+}
+
+.navigation__link {
+  color: #a7a7a7;
+}
+
+.image {
+}
+
+.image__background {
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  background: url("../img/sky.jpg") no-repeat;
+}
+
+.image__content{
+}
+
+.image__title {
+  width: 100%;
+  color: #303030;
+  font-family: Gotham;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 165px 390px 0px 390px;
+}
+
+.image__description {
+  /* Style for "We special" */
+  width: 500px;
+  height: 16px;
+  color: #5a5a5a;
+  font-family: Georgia;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  text-align: center;
+  margin: 12px auto 0 auto;
+}
+
+.image__button {
+}
+
+.image__button-outer {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  opacity: 0.5;
+  margin: 78px auto 50px auto;
+}
+
+.image__button-inner {
+  /* Style for "Ellipse 1" */
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
+  border-radius: 25px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.image__button-arrow {
+}
+
+.work {
+}
+
+.title {
+  text-align: center;
+}
+
+.title__text {
+  /* Style for "featured w" */
+  color: #303030;
+  font-family: Gotham;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 50px auto 0 auto;
+}
+
+.title__underline {
+  /* Style for "Rectangle" */
+  width: 240px;
+  height: 3px;
+  background-color: #303030;
+  margin: 16px auto 0 auto;
+}
+
+.description {
+  /* Base style */
+  color: #5a5a5a;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  text-align: center;
+}
+
+.description__text {
+  width: 540px;
+  margin: 24px auto 0 auto;
+  line-height: 25px;
+}
+
+.work__examples {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 45px auto 70px auto;
+}
+
+.work__example {
+}
+
+.work__example--centered{
+  background-color: #2a2a2a;
+  padding: 10px 30px;
+}
+
+.work__image {
+}
+
+.team {
+  background-color: #f3f3f3;
+  padding: 1px 0px 60px 0px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0px 0px 0px;
+}
+
+.team__member {
+  width: 210px;
+  height: 210px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 1, 1, 0.2);
+}
+
+.team__member-outer {
+  /*width: 140px;
+  height: 100px;*/
+}
+
+.team__member-ellipse {
+  /* Style for "Ellipse 2" */
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 2px 6px rgba(0, 1, 1, 0.75);
+  border: 3px solid #ffffff;
+  background-color: #13858c;
+  border-radius: 40px;
+  margin: 20px auto 0px auto;
+}
+
+.team__member-photo {
+  position: relative;
+  bottom: 6px;
+  right: 9px;
+}
+
+.team__member-name {
+  /* Style for "naME sURNA" */
+  color: #303030;
+  font-family: Gotham;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team__member-position {
+  /* Style for "Lead Devel" */
+  color: #303030;
+  font-family: Georgia;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.team__member-links {
+  display: flexbox;
+  text-align: center;
+}
+
+.team__member-link {
+  margin: 24px 20px 0px 0px;
+}
+
+.team__member-link:last-child {
+  margin: 24px 0px 0px 0px;
+}
+
+.contact {
+}
+
+.contact__container {
+}
+.contact__location {
+}
+.contact__form {
+}
+.contact__text-form {
+}
+.contact__adress-and-button {
+}
+.contact__adress {
+}
+.contact__send-button {
+}

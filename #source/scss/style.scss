@@ -1,0 +1,48 @@
+
+@font-face {
+	font-family: "Gotham - Book";
+	src: url('../fonts/Gotham-Book.eot');
+	src: local('☺'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Medium.eot');
+	src: local('☺'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg') format('svg');
+	font-weight: medium;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Bold.eot');
+	src: local('☺'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+
+    .menu {
+        display: flex;
+        margin: 0 151px 0 0;
+    }
+
+    .bg {
+        height: 500px;
+        margin: 0 0 0 0;
+        background: no-repeat url("../img/sky.jpg");
+    
+        .text {
+            text-align: center;
+        }
+    }
+}
+
+
+
