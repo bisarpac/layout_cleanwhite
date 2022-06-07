@@ -1,10 +1,13 @@
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
+<html lang="en">
 <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Заголовок страницы в браузере -->
 	<title>CSS. Верстка.</title>
 	<!-- Подключаем CSS -->
@@ -16,137 +19,175 @@
 
 <body class="page">
 	<header class="header">
-		<div class="container">
-			<nav class="navigation">
-				<div class="navigation__row">
-					<div class="navigation__logo">LØGØ</div>
-					<ul class="navigation__menu">
-						<li class="navigation__item"><a class="navigation__link" href="#">work</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">team</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">contact</a></li>
-					</ul>
+		<nav class="header__navigation">
+			<div class="header__navigation-container">
+				<a data-goto=".header" class=" header__navigation-link header__navigation-home" href="#">LØGØ</a>
+				<div class="header__navigation-icon">
+					<span></span>
 				</div>
-			</nav>
-		</div>
-		<div class="image">
-			<div class="image__background">
-				<div class="image__content">
-					<h1 class="image__title">let us make<br>your lives easier</h1>
-					<p class="image__description">We specialize in crafting awesome ideas for web, mobile and beyond.</p>
-				</div>
-				<div class="image__button">
-					<div class="image__button-outer">
-						<div class="image__button-inner">
-							<div class="image__button-arrow"></div>
-						</div>
-					</div>
+				<ul class="header__navigation-row">
+					<li class="header__navigation-item">
+						<a data-goto=".header" class="header__navigation-link" href="#">home</a>
+					</li>
+					<li class="header__navigation-item">
+						<a data-goto=".work" class="header__navigation-link" href="#">work</a>
+					</li>
+					<li class="header__navigation-item">
+						<a data-goto=".team" class="header__navigation-link" href="#">team</a>
+					</li>
+					<li class="header__navigation-item">
+						<a data-goto=".contact" class="header__navigation-link" href="#">contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="header__image">
+			<h1 class="header__image-title">let us make<br>
+				your lives easier</h1>
+			<p class="header__image-caption">We specialize in crafting awesome ideas for web, mobile and beyond.</p>
+			<div class="header__image-outer-circle">
+				<div class="header__image-inner-circle">
+					<img class="header__image-arrow" src="img/icons/arrow_down.svg" alt="">
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<section class="work">
-			<div class="title">
-				<h2 class="title__text">featured work</h2>
-				<div class="title__underline"></div>
-			</div>
-			<div class="description">
-				<p class="description__text">Here you can find some of our latest works, to see the details of these works
-					just click the thumbnails below.</p>
-			</div>
-			<div class="work__examples">
-				<div class="work__example"><img class="work__image" src="img/fw11.jpg" alt=""></div>
-				<div class="work__example work__example--centered"><img class="work__image" src="img/fw12.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw13.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw21.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw22.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw23.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw31.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw32.jpg" alt=""></div>
-				<div class="work__example"><img class="work__image" src="img/fw33.jpg" alt=""></div>
-			</div>
-		</section>
-	</div>
-	<section class="team">
+
+	<section id="work" class="work">
 		<div class="container">
-			<div class="title">
-				<h2 class="title__text">team</h2>
-				<div class="title__underline"></div>
+			<h2 class="work__title title">featured work</h2>
+			<div class="underline underline--wide"></div>
+			<p class="work__text text">Here you can find some of our latest works, to see the details of these works
+				just click the thumbnails below.</p>
+			<div class="work__items">
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw11.jpg" alt=""></a>
+				</div>
+				<div class="work__item work__item--centered">
+					<a class="work__item-link" href="#"><img class="work__item-image work__item-image--centered"
+							src="img/fw12.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw13.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw21.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw22.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw23.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw31.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw32.jpg" alt=""></a>
+				</div>
+				<div class="work__item">
+					<a class="work__item-link" href="#"><img class="work__item-image" src="img/fw33.jpg" alt=""></a>
+				</div>
 			</div>
-			<div class="description">
-				<p class="description__text">We are a hard working group, who's aim is to listen to your problems<br>and to come
-					up with the best solution possible. We follow the latest trends on the web to create custom talierd niche
-					websites.</p>
-			</div>
-			<div class="team-members">
+		</div>
+	</section>
+
+	<section id="team" class="team">
+		<h2 class="team__title title">team</h2>
+		<div class="underline"></div>
+		<p class="team__text text">We are a hard working group, who's aim is to listen to your problems
+			and to come up with the best solution possible. We follow the lates trends on
+			the web to create custom talierd niche websites.</p>
+		<div class="container">
+			<div class="team__members">
 				<div class="team__member">
-					<div class="team__member-outer">
-						<div class="team__member-ellipse">
-							<img class="team__member-photo" src="img/t1.png" alt="">
-						</div>
+					<div class="team__member-box">
+						<img class="team__member-image" src="img/t1.png" alt="">
 					</div>
 					<div class="team__member-name">naME sURNAME</div>
 					<div class="team__member-position">Lead Developer</div>
-					<div class="team__member-links">
-						<img class="team__member-link" src="img/icons/twitter.png" alt="">
-						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					<div class="team__member-socials">
+						<img class="team__member-social" src="img/icons/twitter.png" alt="">
+						<img class="team__member-social" src="img/icons/linkedin.png" alt="">
 					</div>
 				</div>
 				<div class="team__member">
-					<div class="team__member-outer">
-						<div class="team__member-ellipse">
-							<img class="team__member-photo" src="img/t2.png" alt="">
-						</div>
+					<div class="team__member-box">
+						<img class="team__member-image" src="img/t2.png" alt="">
 					</div>
 					<div class="team__member-name">naME sURNAME</div>
 					<div class="team__member-position">Lead Designer</div>
-					<div class="team__member-links">
-						<img class="team__member-link" src="img/icons/twitter.png" alt="">
-						<img class="team__member-link" src="img/icons/dribbbel.png" alt="">
-						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					<div class="team__member-socials">
+						<img class="team__member-social" src="img/icons/twitter.png" alt="">
+						<img class="team__member-social" src="img/icons/dribbbel.png" alt="">
+						<img class="team__member-social" src="img/icons/linkedin.png" alt="">
 					</div>
 				</div>
 				<div class="team__member">
-					<div class="team__member-outer">
-						<div class="team__member-ellipse">
-							<img class="team__member-photo" src="img/t3.png" alt="">
-						</div>
+					<div class="team__member-box">
+						<img class="team__member-image" src="img/t3.png" alt="">
 					</div>
 					<div class="team__member-name">naME sURNAME</div>
 					<div class="team__member-position">Marketing Director</div>
-					<div class="team__member-links">
-						<img class="team__member-link" src="img/icons/skype.png" alt="">
-						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					<div class="team__member-socials">
+						<img class="team__member-social" src="img/icons/skype.png" alt="">
+						<img class="team__member-social" src="img/icons/linkedin.png" alt="">
 					</div>
 				</div>
 				<div class="team__member">
-					<div class="team__member-outer">
-						<div class="team__member-ellipse">
-							<img class="team__member-photo" src="img/t4.png" alt="">
-						</div>
+					<div class="team__member-box">
+						<img class="team__member-image" src="img/t4.png" alt="">
 					</div>
 					<div class="team__member-name">naME sURNAME</div>
 					<div class="team__member-position">Business Director</div>
-					<div class="team__member-links">
-						<img class="team__member-link" src="img/icons/skype.png" alt="">
-						<img class="team__member-link" src="img/icons/linkedin.png" alt="">
+					<div class="team__member-socials">
+						<img class="team__member-social" src="img/icons/skype.png" alt="">
+						<img class="team__member-social" src="img/icons/linkedin.png" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contact">
-		<div class="contact__container">
-			<div class="contact__location"></div>
-			<div class="contact__form">
-				<div class="contact__text-form"></div>
-				<div class="contact__adress-and-button">
-					<div class="contact__adress"></div>
-					<div class="contact__send-button"></div>
+
+	<section id="contact" class="contact">
+		<h2 class="contact__title title">contact</h2>
+		<div class="underline"></div>
+		<div class="contact__content container">
+			<div class="contact__location">
+				<p class="contact__location-caption">Where are we located?</p>
+				<div class="contact__location-box">
+					<img class="contact__location-image" src="img/location.jpg" alt="">
 				</div>
 			</div>
+			<form class="contact__input" action="#">
+				<p class="contact__message-caption">Want to contact us now? Just drop us a line below.</p>
+				<div class="contact__message-box">
+					<div class="contact__message">
+						<textarea class="input" type="text" placeholder="Leave us a message..."></textarea>
+					</div>
+					<div class="contact__email-and-button">
+						<div class="contact__email">
+							<input class="input" type="text" placeholder="your@mail.com">
+						</div>
+						<div class="contact__button">
+							<button class="contact__button-btn" type="submit">
+								<a class="contact__button-btn-send" href="#"><span>SEND</span></a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<div class="container footer__box">
+			<div class="footer__adress"><span class="footer__adress--styled">Adress:</span> Ahmet Bayman Caddesi No:8,
+				Seyrantepe - Istanbul</div>
+			<div class="footer__copyright">Copyright © 2013 Limbo</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
